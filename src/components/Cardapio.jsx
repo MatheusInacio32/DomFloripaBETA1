@@ -9,20 +9,20 @@ const Cardapio = () => {
   
   const pratos = [
     { icon: faBurger, titulo: "Hambúrguer na Brasa", desc: "Feito na brasa, com receita exclusiva e sabor inigualável. Suculento e artesanal!", badge: "Especialidade", badgeIcon: faFire, img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop" },
-    { icon: faBowlFood, titulo: "Feijoada Completa", desc: "Todo sábado das 12h às 15h30! Feijoada deliciosa com show ao vivo e caipirinha em dobro.", badge: "Sábados", badgeIcon: faBeer, img: "https://images.unsplash.com/photo-1623855244462-a3d8e8c10717?w=600&h=400&fit=crop" },
+    { icon: faBowlFood, titulo: "Feijoada Completa", desc: "Todo sábado das 12h às 15h30! Feijoada deliciosa com show ao vivo e caipirinha em dobro.", badge: "Sábados", badgeIcon: faBeer, img: "/img/body.png" },
     { icon: faUtensils, titulo: "Comida Caseira", desc: "Pratos feitos com o tempero especial que só comida caseira tem. Aquele sabor de casa!", badge: "Tradicional", badgeIcon: faUtensils, img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop" }
   ];
 
   return (
-    <section id="cardapio" className="py-16 md:py-24 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-white/40 to-transparent pointer-events-none"></div>
+    <section id="cardapio" className="py-16 md:py-24 relative bg-white">
       <div className="max-w-[1400px] mx-auto px-5 relative">
         <div className="text-center mb-16 space-y-4">
-          <h2 className={titleClass}>Nossos Pratos</h2>
+          <span className="text-[#8B6F47] text-sm font-semibold uppercase tracking-widest">Nosso Cardápio</span>
+          <h2 className={titleClass}>Pratos Especiais</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-transparent via-[#8B6F47] to-transparent mx-auto"></div>
           <p className="text-base text-[#6B5537] max-w-2xl mx-auto">Sabores únicos preparados com carinho e ingredientes selecionados</p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {pratos.map(({ icon, titulo, desc, badge, badgeIcon, img }) => (
             <div key={titulo} className={cardClass}>
               <div className="aspect-[4/3] overflow-hidden relative group">

@@ -12,17 +12,17 @@ const Eventos = () => {
   ];
 
   return (
-    <section id="eventos" className="py-16 md:py-24 relative">
-      <div className="absolute inset-0 bg-gradient-to-br from-white/60 via-[#8B6F47]/5 to-white/60"></div>
+    <section id="eventos" className="py-16 md:py-24 relative bg-[#FDF8F3]">
       <div className="max-w-[1400px] mx-auto px-5 relative">
         <div className="text-center mb-16 space-y-4">
+          <span className="text-[#8B6F47] text-sm font-semibold uppercase tracking-widest">Momentos Especiais</span>
           <h2 className={titleClass}>Eventos e Música</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-transparent via-[#8B6F47] to-transparent mx-auto"></div>
           <p className="text-base text-[#6B5537] max-w-2xl mx-auto">Momentos especiais com música ao vivo e muito sabor</p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {eventos.map(({ icon, titulo, desc }) => (
-            <div key={titulo} className="text-center space-y-5 p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-[#8B6F47]/10 group">
+            <div key={titulo} className="text-center space-y-5 p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-[#8B6F47]/10 group">
               <div className="inline-flex w-20 h-20 rounded-full bg-gradient-to-br from-[#8B6F47]/15 to-[#8B6F47]/5 items-center justify-center group-hover:scale-110 transition-transform duration-500">
                 <FontAwesomeIcon icon={icon} className="text-[#8B6F47] text-3xl group-hover:rotate-12 transition-transform duration-500" />
               </div>

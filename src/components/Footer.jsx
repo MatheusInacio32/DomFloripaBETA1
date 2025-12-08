@@ -100,13 +100,24 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="text-center space-y-2">
+        <div className="text-center space-y-4">
           <p className="text-sm sm:text-base text-white/70">
             &copy; {new Date().getFullYear()} <span className="text-white font-semibold">Dom Floripa</span>. Todos os direitos reservados.
           </p>
-          <p className="text-xs text-white/50">
-            Desenvolvido por <span className="text-white/70 font-semibold">Astro Tech Hub</span>
-          </p>
+          <a 
+            href="https://agenciastro.com.br/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#5b7bf5]/50 rounded-full px-4 py-2 transition-all duration-300 group"
+          >
+            <img 
+              src="/astro-logo.png" 
+              alt="Astro Tech Hub" 
+              className="h-6 w-6 group-hover:scale-110 transition-transform" 
+            />
+            <span className="text-white/50 text-xs">Desenvolvido por</span>
+            <span className="text-[#5b7bf5] font-semibold text-sm group-hover:text-[#7b9bf5] transition-colors">Astro Tech Hub</span>
+          </a>
         </div>
       </div>
     </footer>

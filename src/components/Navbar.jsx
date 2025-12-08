@@ -14,7 +14,7 @@ const Navbar = ({ mobileMenuOpen, setMobileMenuOpen }) => {
 
   return (
     <>
-      <header className="fixed lg:sticky top-0 left-0 right-0 z-50 backdrop-blur-md shadow-lg border-b border-[#8B6F47]/10" style={{ ...bgPattern, backgroundColor: 'rgba(250, 247, 242, 0.95)' }}>
+      <header className="fixed lg:sticky top-0 left-0 right-0 z-50 shadow-lg border-b border-[#8B6F47]/10 bg-[#FAF7F2]">
         <div className="mx-auto px-4 sm:px-6 lg:px-8 py-3 lg:py-4" style={{ maxWidth: '1350px' }}>
           <div className="flex justify-between items-center">
             {/* Logo */}

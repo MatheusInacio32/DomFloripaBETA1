@@ -13,10 +13,10 @@ const Delivery = () => {
   ];
 
   return (
-    <section id="delivery" className="py-16 md:py-24 relative">
-      <div className="absolute inset-0 bg-gradient-to-t from-white/60 to-transparent"></div>
+    <section id="delivery" className="py-16 md:py-24 relative bg-white">
       <div className="max-w-[1400px] mx-auto px-5 relative">
         <div className="text-center mb-16 space-y-4">
+          <span className="text-[#8B6F47] text-sm font-semibold uppercase tracking-widest">Delivery & Retirada</span>
           <h2 className={titleClass}>Faça Seu Pedido</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-transparent via-[#8B6F47] to-transparent mx-auto"></div>
           <p className="text-base text-[#6B5537] max-w-2xl mx-auto">Escolha a melhor forma de receber nossos pratos</p>
