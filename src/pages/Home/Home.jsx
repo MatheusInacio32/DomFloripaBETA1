@@ -4,6 +4,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import Navbar from '../../components/Navbar';
 import Cardapio from '../../components/Cardapio';
 import Eventos from '../../components/Eventos';
+import Mozer from '../../components/Mozer';
 import Delivery from '../../components/Delivery';
 import Localizacao from '../../components/Localizacao';
 import Footer from '../../components/Footer';
@@ -149,6 +150,8 @@ const Home = () => {
       <Cardapio />
 
       <Eventos />
+
+      <Mozer />
 
       <Delivery />
       
